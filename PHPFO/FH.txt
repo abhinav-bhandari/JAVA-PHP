@@ -1,0 +1,60 @@
+Form handling in PHP is a common way to collect user data and process it. Forms are created in HTML and can use two primary methods to submit data to a server-side script: the GET and POST methods. These methods differ in how they transmit data and how the server-side script accesses it:
+
+
+GET Method:
+
+
+1) The GET method appends data to the URL as query parameters.
+
+2) Data is visible in the URL, making it suitable for non-sensitive information.
+
+3) Data is limited in size due to URL length restrictions.
+
+4) It is not suitable for passwords or other sensitive data because it's visible in the URL.
+
+5) It is commonly used for search queries and navigation.
+
+
+POST Method:
+
+
+1) The POST method sends data in the HTTP request body.
+
+2) Data is not visible in the URL, making it suitable for sensitive or larger data.
+
+3) It is commonly used for submitting forms, such as login or registration forms.
+
+4) It doesn't have the same size limitations as the GET method.
+
+5) Here's an example of a simple HTML form that collects a username and password, then displays them on the same page using the POST method:
+       
+
+        <html>
+        <head>
+            <title>Simple Form</title>
+        </head>
+        <body>
+            <h2>Simple Form Example</h2>
+        
+            <form method="post" action="">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+        
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $username = $_POST["username"];
+                $password = $_POST["password"];
+                echo "<h3>Submitted Data:</h3>";
+                echo "Username: $username<br>";
+                echo "Password: $password";
+            }
+            ?>
+        </body>
+        </html>
+    

@@ -1,0 +1,55 @@
+When you place variables in a double-quoted string, PHP will expand the variable names. If a string contains the double quotes (“), you need to escape them using the backslash character(\). For example:
+
+To define a string, you wrap the text within single quotes like this:
+
+        <?php 
+            $he = 'Bob';
+            $she = 'Alice';
+            $text = "$he said, \"PHP is awesome\".
+            \"Of course.\" $she agreed.";
+            echo $text;
+        ?>
+    
+        Bob said, "PHP is awesome".
+        "Of course." Alice agreed.
+
+
+PHP Heredoc syntax:
+
+
+The following shows the syntax of a heredoc string:
+
+FOR EXAMPLE :
+
+        
+            <?php
+
+            $str =<<<IDENTIFIER
+            place a string here
+            it can span multiple lines
+            and include single quote ' and double quotes "
+            IDENTIFIER;
+
+            ?>
+        
+    
+PHP heredoc strings’ use cases:
+
+
+Getting the length of a string
+
+To get the length of a string, you use a built-in function strlen(), for example:
+
+        <?php
+        
+            $title = 'My site';
+            $header = <<<HEADER
+              
+
+                <h1>$title </h1> 
+
+                HEADER;
+            echo $header;
+        
+        ?>
+            

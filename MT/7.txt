@@ -1,0 +1,29 @@
+class Th7 extends Thread{
+    public void run() {
+System.out.println("Thread : "+Thread.currentThread().getName()+" Priority  "+Thread.currentThread().getPriority());
+    }
+    public static void main(String[] args) {
+        Th7 t1 = new Th7();
+        t1.start();
+        t1.setName("ABC");
+        t1.setPriority(2);
+        Th7 t2 = new Th7();
+        t2.start();
+        t2.setName("XYZ");
+        t2.setPriority(3);
+        Th7 t3 = new Th7();
+        t3.start();
+        t3.setPriority(1);
+        t3.setName("PQR");
+    }}
+
+
+OUTPUT
+
+
+G:\COLLEGE WORK\ProjectPrograms\MultiThreading>javac Th7.java
+
+G:\COLLEGE WORK\ProjectPrograms\MultiThreading>java Th7
+Thread : ABC Priority  2
+Thread : PQR Priority  1
+Thread : XYZ Priority  3

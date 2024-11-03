@@ -1,0 +1,14 @@
+File handling is an important part of any web application. You often need to open and process a file for different tasks.PHP has several functions for creating, reading, uploading, and editing files.
+
+The readfile() function reads a file and writes it to the output buffer.
+
+Assume we have a text file called "webdictionary.txt", stored on the server, that looks like this:
+
+        <?php
+
+        /*file handling/
+        echo readfile("webdictionary.txt");
+        ?>
+    
+The readfile() function is useful if all you want to do is open up a file and read its contents.
+

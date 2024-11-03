@@ -1,0 +1,11 @@
+class DC11{
+public static void main(String[] args){
+String str = "Hello";
+char[] chars = str.toCharArray();
+System.out.println(chars);
+}}
+
+OUTPUT
+
+
+Hello

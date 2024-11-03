@@ -1,0 +1,73 @@
+There are three types of arrays that you can create. These are:
+
+
+1) Indexed array:An array with a numeric key.
+2) Associative array : An array where each key has its own specific value.
+3) Multidimensional array:An array containing one or more arrays within itself.
+
+
+Indexed Arrays
+
+
+An indexed or numeric array stores each array element with a numeric index. The following examples shows two ways of creating an indexed array, the easiest way is:
+
+        <?php
+        // Define an indexed array
+            $colors = array("Red", "Green", "Blue");
+        ?>
+    
+Output:
+
+        Array ( [0] => Red [1] => Green [2] => Blue )
+    
+Similar Exmaple of above porgram
+
+        <?php
+            $colors[0] = "Red"; 
+            $colors[1] = "Green"; 
+            $colors[2] = "Blue"; 
+        ?>
+    
+        Array ( [0] => Red [1] => Green [2] => Blue )
+
+    
+Associative Arrays
+
+
+In an associative array, the keys assigned to values can be arbitrary and user defined strings. In the following example the array uses keys instead of index numbers:
+
+        
+            <?php
+                // Define an associative array
+                $ages = array("Peter"=>22, "Clark"=>32, "John"=>28);
+            ?>
+        
+    
+Output :
+
+        
+            Array ( [Peter] => 22 [Clark] => 32 [John] => 28 )
+        
+    
+
+Multi-dimensional Array
+
+
+A multi-dimensional array each element in the main array can also be an array. And each element in the sub-array can be an array, and so on. Values in the multi-dimensional array are accessed using multiple index.
+
+        
+            <?php
+                $cars = array
+                (
+                array("Elentra",22,18),
+                array("Audi",15,13),
+                );
+                echo $cars[0][0].": In stock: ".$cars[0][1].", sold: ".$cars[0][2].".\n";
+                echo $cars[1][0].": In stock: ".$cars[1][1].", sold: ".$cars[1][2].".\n";
+            ?>
+        
+    
+        
+            Elentra: In stock: 22, sold: 18.
+            Audi: In stock: 15, sold: 13.
+        

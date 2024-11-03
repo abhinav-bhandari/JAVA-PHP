@@ -1,0 +1,16 @@
+In PHP, the Break statement is used in loops (such as for, foreach, while, and do...while loops) and switch statements to exit the loop or switch statement prematurely. The break statement allows you to control the flow of the program by terminating the loop or switch when a certain condition is met. Here's how the break statement is typically used:
+
+Using break in for loop:
+
+
+        for ($i = 1; $i <= 10; $i++) {
+            if ($i == 5) {
+                break; // Exit the loop when $i is equal to 5
+            }
+            echo $i . " ";
+        }
+    
+Output:
+
+        1 2 3 4
+    

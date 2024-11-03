@@ -1,0 +1,11 @@
+class DC18{
+public static void main(String[] args){
+double doubleValue = 123.99;
+int intValue = (int) doubleValue;
+System.out.println(intValue);
+}}
+
+OUTPUT
+
+
+123

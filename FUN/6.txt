@@ -1,0 +1,23 @@
+class Fun6 {
+    public static void printCharacters(char start, char end) {
+        if (start > end) {
+System.out.println("Invalid input: start character should be less than or equal to end character.");
+            return;
+        }
+        for (char c = start; c <= end; c++) {
+            System.out.print(c + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        char start = 'A';
+        char end = 'P';
+        printCharacters(start, end);
+    }
+}
+
+OUTPUT
+
+
+A B C D E F G H I J K L M N O P

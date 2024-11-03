@@ -1,0 +1,11 @@
+class DC7{
+public static void main(String[] args) {
+        String str1 = "123.456";
+        double num1 = Double.parseDouble(str1);
+        System.out.println("Converted to double: " + num1);
+}}
+
+OUTPUT
+
+
+Converted to double: 123.456

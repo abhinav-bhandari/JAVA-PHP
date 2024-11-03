@@ -1,0 +1,43 @@
+class DArr9{
+public static void main(String[] args) {
+int[][] matrix = {{1, 2, 3},{4, 5, 6},{7, 8, 9}};
+int numRows = matrix.length;
+int numCols = matrix[0].length;
+System.out.println("Printing Matrix : ");
+for(int i = 0 ; i < numRows ; i++){
+for(int j = 0 ; j < numCols ; j++){ 
+System.out.print(matrix[i][j]+" ");       
+}
+System.out.println();
+}
+int[] rowSums = new int[numRows];
+int[] colSums = new int[numCols];
+for (int i = 0; i < numRows ; i++) {
+for (int j = 0; j < numCols ; j++) {
+rowSums[i] += matrix[i][j];
+colSums[j] += matrix[i][j];
+}}
+System.out.println("Sum of each row:");
+for (int i = 0 ; i < rowSums.length ; i++) {
+System.out.println("Row " + i + ": " + rowSums[i]);
+}
+System.out.println("Sum of each column:");
+for (int j = 0 ; j < colSums.length ; j++) {
+System.out.println("Column " + j + ": " + colSums[j]);
+}}}
+
+OUTPUT
+
+
+Printing Matrix :
+1 2 3
+4 5 6
+7 8 9
+Sum of each row:
+Row 0: 6
+Row 1: 15
+Row 2: 24
+Sum of each column:
+Column 0: 12
+Column 1: 15
+Column 2: 18

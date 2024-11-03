@@ -1,0 +1,11 @@
+class DC5{
+public static void main(String[] args) {
+        String str1 = "123.456";
+        float num1 = Float.parseFloat(str1);
+        System.out.println("Converted to float: " + num1);
+}}
+
+OUTPUT
+
+
+Converted to float: 123.456

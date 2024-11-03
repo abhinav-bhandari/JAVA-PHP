@@ -1,0 +1,34 @@
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Polygon;
+
+public class App4 extends Applet {
+public void init() {
+        
+   System.out.println("Init");   
+  }
+public void start() {
+        
+   System.out.println("Start");   
+  }
+public void paint(Graphics g) {
+        int[] xPoints = {50, 150, 100};  
+        int[] yPoints = {50, 50, 150};   
+        Polygon polygon = new Polygon(xPoints, yPoints, xPoints.length);
+        g.fillPolygon(polygon);
+ System.out.println("Paint"); 
+    }
+public void stop() {
+        
+   System.out.println("Stop");   
+  }
+public void destroy() {
+        
+   System.out.println("Destroy");   
+  }
+}
+/*
+
+
+*/

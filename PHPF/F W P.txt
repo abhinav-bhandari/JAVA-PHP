@@ -1,0 +1,25 @@
+You can specify parameters when you define your function to accept input values at run time. The parameters work like placeholder variables within a function; they're replaced at run time by the values (known as argument) provided to the function at the time of invocation.
+
+    
+        function myFunc($oneParameter, $anotherParameter){
+            // Code to be executed
+        }
+    
+You can define as many parameters as you like. However for each parameter you specify, a corresponding argument needs to be passed to the function when it is called.
+
+The getSum() function in following example takes two integer values as arguments, simply add them together and then display the result in the browser.
+
+    
+        <?php
+        // Defining function
+            function getSum($num1, $num2){
+            $sum = $num1 + $num2;
+            echo "Sum of the two numbers $num1 and $num2 is : $sum";
+            }
+            // Calling function
+            getSum(10, 20);
+        ?>
+    
+Ouput:
+
+        Sum of the two numbers 10 and 20 is : 30

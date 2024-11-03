@@ -1,0 +1,12 @@
+class DC1{
+    public static void main(String[] args) {
+        String str1 = "123";
+        int num1 = Integer.parseInt(str1);
+        System.out.println("Converted to int: " + num1);
+
+}}
+
+OUTPUT
+
+
+Converted to int: 123

@@ -1,0 +1,19 @@
+A function is a self-contained block of code that performs a specific task.
+
+PHP has a huge collection of internal or built-in functions that you can call directly within your PHP scripts to perform a specific task, like gettype(), print_r(), var_dump, etc.
+
+Example: Simple program to print “Hello world!” message on the screen.
+
+        
+            <?php
+
+            /* echo is a print command */
+            echo "Hello world!"; 
+    
+            ?> 
+        
+       
+    
+Output:
+
+        Hello world!

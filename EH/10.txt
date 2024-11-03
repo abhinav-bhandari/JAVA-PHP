@@ -1,0 +1,23 @@
+class EH10 {
+public static void main(String[] args) {
+   try {
+      try {
+          int num = 10 / 0; 
+        System.out.println("Inner try block: " + num);
+      } catch (ArithmeticException e) {
+        System.out.println("Inner catch block: " + e.getMessage());
+      }
+      String str = null;
+      System.out.println("Outer try block: " + str.length());
+    } catch (NullPointerException e) {
+      System.out.println("Outer catch block: " + e.getMessage());
+    }}}
+
+OUTPUT
+
+
+G:\COLLEGE WORK\ProjectPrograms\ExceptionHandling>javac EH13.java
+
+G:\COLLEGE WORK\ProjectPrograms\ExceptionHandling>java EH13
+Inner catch block: / by zero
+Outer catch block: null

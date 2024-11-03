@@ -1,0 +1,50 @@
+class DArr4{
+public static void main(String[] args){
+int arr1[][]={{3,3,3},{3,3,3},{3,3,3}};
+int arr2[][]={{6,6,6},{6,6,6},{6,6,6}};
+int sub[][];
+sub=new int[arr1.length][arr1.length];
+System.out.println("Elements of First Matrix : ");
+for(int i = 0 ; i < arr1.length ; i++){
+for(int j = 0 ; j < arr1.length ; j++){
+System.out.print(arr1[i][j]+" ");
+}
+System.out.println();
+}
+System.out.println("\nElements of Second Matrix : ");
+for(int i = 0 ; i < arr2.length ; i++){
+for(int j = 0 ; j < arr2.length ; j++){
+System.out.print(arr2[i][j]+" ");
+}
+System.out.println();
+}
+for(int i = 0 ; i < sub.length ; i++){
+for(int j = 0 ; j < sub.length ; j++){
+sub[i][j]=arr2[i][j]-arr1[i][j];
+}}
+System.out.println("\nSubtraction of Matrix : ");
+for(int i = 0 ; i < sub.length ; i++){
+for(int j = 0 ; j < sub.length ; j++){
+System.out.print(sub[i][j]+" ");
+}
+System.out.println();
+}
+}}
+
+OUTPUT
+
+
+Elements of First Matrix :
+3 3 3
+3 3 3
+3 3 3
+
+Elements of Second Matrix :
+6 6 6
+6 6 6
+6 6 6
+
+Subtraction of Matrix :
+3 3 3
+3 3 3
+3 3 3

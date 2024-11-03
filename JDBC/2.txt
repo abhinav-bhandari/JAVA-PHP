@@ -1,0 +1,25 @@
+import java.sql.*;
+class jdbc2{
+public static void main(String s[]) throws java.lang.ClassNotFoundException,SQLException{
+Class.forName("com.mysql.jdbc.Driver");
+Connection c1=DriverManager.getConnection("jdbc:mysql://localhost:3306/A","root","root");
+Statement st=c1.createStatement();
+System.out.println(st.executeUpdate("create table employee (sno int,name varchar(20),salary int)"));
+}}
+
+
+OUTPUT
+
+
+G:\COLLEGE WORK\JavaPrograms>javac jdbc2.java
+G:\COLLEGE WORK\JavaPrograms>java jdbc2
+0
+
+mysql> show tables;
++------------------+
+| Tables_in_A      |
++------------------+
+| employee         |
+| student          |
++------------------+
+2 rows in set (0.00 sec)

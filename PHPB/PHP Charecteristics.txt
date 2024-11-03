@@ -1,0 +1,9 @@
+1) Open Source:It is an open-source programming language so it can download freely.
+
+2) Simplicity:Since PHP does not include libraries like C/C++ so its structure is simple. It contains lots of pre-defined functions to secure your data. Execution of PHP starts from ().     
+
+3) Efficiency:PHP 4.0 uses resource allocation mechanisms and object-oriented programming, in addition to session management features. It eliminates unnecessary memory allocation.
+
+4) Security:Many encryption functions are supported by PHP to secure the data. Flexibility: It is a very flexible language because it can be embedded with HTML, CSS, JavaScript, XML, and many other languages. Also, the PHP code can be run on any device like Phone, Tabs, Laptops etc.
+
+5) Object-Oriented:The object-oriented programming features are added in PHP 4.0.

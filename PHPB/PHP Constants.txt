@@ -1,0 +1,32 @@
+PHP CONSTANTS 
+
+
+A constant is simply a name that holds a single value. As its name implies, the value of a constant cannot be changed during the execution of the PHP script.
+
+To define a constant, you use the define() function. The define() function takes the constant’s name as the first argument and the constant value as the second argument. For example:
+
+        <?php 
+
+        define('WIDTH','1140px');
+        echo WIDTH;
+        ?>
+
+
+CONSTANTS KEYWORD 
+
+PHP provides you with another way to define a constant via the const keyword. Here’s the syntax:
+
+const CONSTANT_NAME = value;
+
+FOR EXAMPLE :
+
+            <?php
+
+                const SALES_TAX = 0.085;
+
+                $gross_price = 100;
+
+                $net_price = $gross_price * (1 + SALES_TAX);
+
+                echo $net_price; // 108.5
+            ?>        

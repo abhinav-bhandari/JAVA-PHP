@@ -1,0 +1,11 @@
+class DC19{
+public static void main(String[] args){
+char charValue = 'A';
+int intValue = (int) charValue;
+System.out.println(intValue); 
+}}
+
+OUTPUT
+
+
+65

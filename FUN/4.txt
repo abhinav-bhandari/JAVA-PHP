@@ -1,0 +1,33 @@
+class Fun4 {
+
+    public static int countWords(String str) {
+        if (str == null || str.isEmpty()) {
+            return 0;
+        }
+        int wordCount = 0;
+        boolean isWord = false;
+        for (int i = 0 ; i < str.length() ; i++) {
+if (Character.isLetter(str.charAt(i)) || Character.isDigit(str.charAt(i))) {
+        isWord = true;
+} 
+else if(!Character.isLetter(str.charAt(i)) && !Character.isDigit(str.charAt(i)) && isWord) {
+                wordCount++;
+                isWord = false;
+            }
+        }
+        if (isWord) {
+            wordCount++;
+        }
+        return wordCount;
+    }
+
+    public static void main(String[] args) {
+        String str = "Hello World, this is a test string.";
+        System.out.println("Word count: " + countWords(str));
+    }
+}
+
+OUTPUT
+
+
+Word count: 7

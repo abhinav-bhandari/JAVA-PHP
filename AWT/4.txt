@@ -1,0 +1,13 @@
+import java.awt.*;
+class awt4 extends Frame{
+public static void main(String[] args){
+Frame f=new Frame();
+TextField t1=new TextField("Enter a value here !",20);
+f.setTitle("MyNotepad");
+f.setLayout(new FlowLayout(FlowLayout.RIGHT));
+f.setBounds(50,50,300,300);
+f.add(t1);
+f.setVisible(true);
+}
+}
+

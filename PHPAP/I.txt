@@ -1,0 +1,33 @@
+In PHP, include and require are both used for including external files in a PHP script. These external files can contain functions, variables, HTML, or other PHP code that you want to reuse across multiple pages. The primary difference between them lies in how they handle errors and whether the script execution continues when the included file is not found:
+
+1. include Statement:
+
+
+The include statement is used to include a file in PHP.
+If the included file is not found, include generates a warning and allows the script to continue
+It is commonly used for non-critical files, such as templates or optional components.
+    
+require("file_to_require.php");
+
+require Statement:
+
+
+The require statement is also used to include a file in PHP.
+If the included file is not found, require generates a fatal error and halts script execution.
+It is commonly used for essential files or components that are necessary for the script to function correctly.
+
+require("file_to_require.php");
+
+
+Use include when you want to include a file that may not be critical to the operation of your script, and you want the script to continue running even if the included file is missing or encounters an error.
+
+For example :
+
+        <?php
+
+        /* include*/
+        include("header.php");
+
+        /* include*/
+        require("config.php");
+        ?>

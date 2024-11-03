@@ -1,0 +1,39 @@
+In PHP, you can use string interpolation with curly braces to embed variables and expressions within double-quoted strings. This feature allows you to include the values of variables and evaluate expressions directly within the string. Here's how string interpolation with curly braces works in PHP:
+
+
+
+Basic Variable Interpolation:
+
+
+You can include variable values directly within double-quoted strings by wrapping the variable name in curly braces preceded by a dollar sign ({$variable}).
+
+        $name = "John";
+        $message = "Hello, {$name}!";
+        echo $message; // Output: Hello, John!
+    
+
+Complex Expressions:
+
+
+You can also evaluate complex expressions and include their results within the string using curly braces. The expression should be enclosed in {}.
+
+$x = 5; $y = 3; $result = "The sum of {$x} and {$y} is {$x + $y}."; echo $result; // Output: The sum of 5 and 3 is 8.
+
+
+Nested Curly Braces:
+
+
+        $name = "Alice";
+        $message = "Hello, {{$name}}!";
+        echo $message; // Output: Hello, {Alice}!
+     
+
+Array Indexing :
+
+
+You can interpolate array elements or object properties using curly braces as well.
+
+        $person = ['name' => 'Alice', 'age' => 30];
+        $message = "Hello, {$person['name']}! You are {$person['age']} years old.";
+        echo $message; // Output: Hello, Alice! You are 30 years old.
+     

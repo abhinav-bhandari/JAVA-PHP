@@ -1,0 +1,44 @@
+In PHP, a string is a sequence of characters. PHP provides you with four ways to define a literal string, including single-quoted, double-quoted, heredoc syntax, and nowdoc syntax. This tutorial focuses on the single-quoted and double-quoted strings.
+
+To define a string, you wrap the text within single quotes like this:
+
+        <?php 
+
+        $title = 'PHP string is awesome';
+        $title2 = "PHP string is awesome";
+
+        echo '$title';
+        echo '$title2';
+        ?>
+    
+        PHP string is awesome
+        PHP string is awesome
+
+Accessing characters in a string
+
+A string has a zero-based index. It means that the first character has an index of 0. The second character has an index of 1 and so on.
+
+To access a single character in a string at a specific position, you use the following syntax:
+
+$str[index]
+
+FOR EXAMPLE :
+
+            <?php
+            $title = 'PHP string is awesome';
+
+            echo $title[0];
+            ?>
+    
+Output :
+
+        P
+    
+Getting the length of a string
+
+To get the length of a string, you use a built-in function strlen(), for example:
+
+        <?php
+            $title = 'PHP string is awesome';
+            echo strlen($title);
+        ?>

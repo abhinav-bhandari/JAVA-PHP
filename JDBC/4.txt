@@ -1,0 +1,34 @@
+import java.sql.*;
+class jdbc4{
+public static void main(String s[]) throws java.lang.ClassNotFoundException,SQLException{
+Class.forName("com.mysql.jdbc.Driver");
+Connection c1=DriverManager.getConnection("jdbc:mysql://localhost:3306/A","root","root");
+Statement st=c1.createStatement();
+System.out.println(st.executeUpdate("Update student set name='D' where rollno=4"));
+}}
+
+OUTPUT
+
+
+G:\COLLEGE WORK\JavaPrograms>javac jdbc4.java
+G:\COLLEGE WORK\JavaPrograms>java jdbc4
+
+mysql> select * from student;
++--------+--------+
+| rollno | name   |
++--------+--------+
+|      1 | A      |
+|      2 | B      |
+|      4 | C      |
++--------+--------+
+3 rows in set (0.00 sec)
+
+mysql> select * from student;
++--------+--------+
+| rollno | name   |
++--------+--------+
+|      1 | A      |
+|      2 | B      |
+|      4 | D      |
++--------+--------+
+3 rows in set (0.00 sec)

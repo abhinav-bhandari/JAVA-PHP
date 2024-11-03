@@ -1,0 +1,16 @@
+Download XAMPP :
+
+Visit the official XAMPP website https://www.apachefriends.org/download.html and download the latest version suitable for your Windows environment (32-bit or 64-bit).
+
+
+Installation:Simple Steps to Follow
+
+1) Run the XAMPP installer you downloaded.
+2) Follow the on-screen instructions to install XAMPP.
+3) During installation, you can choose the components you want to install, which include Apache, MySQL, PHP, and other tools.
+
+
+Start Apache and MySQL:
+
+1) After installation, launch the XAMPP Control Panel, which is installed with XAMPP. You can find it in the XAMPP folder or start it from the Start Menu.
+2) Click the "Start" buttons next to "Apache" and "MySQL" to launch the web server and database server.

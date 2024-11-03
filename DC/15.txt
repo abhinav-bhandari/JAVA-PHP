@@ -1,0 +1,11 @@
+class DC15{
+public static void main(String[] args){
+int intValue = 123456789;
+long longValue = (long) intValue;
+System.out.println(longValue);
+}}
+
+OUTPUT
+
+
+123456789

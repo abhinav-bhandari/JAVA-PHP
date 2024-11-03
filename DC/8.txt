@@ -1,0 +1,11 @@
+class DC8{
+public static void main(String[] args) {
+double num = 123.456;
+String str = Double.toString(num);
+System.out.println(str);
+}}
+
+OUTPUT
+
+
+123.456

@@ -1,0 +1,23 @@
+fopen()
+
+
+A better method to open files is with the fopen() function. This function gives you more options than the readfile() function.
+
+
+fclose()
+
+
+The fclose() function is used to close an open file.
+
+
+We will use the text file, "webdictionary.txt", during the lessons:
+
+        <?php
+        $myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+        echo fread($myfile,filesize("webdictionary.txt"));
+        fclose($myfile);
+        ?>
+    
+Output:
+
+        1 2 3 4

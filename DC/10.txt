@@ -1,0 +1,14 @@
+import java.time.LocalDate;
+
+class DC10 {
+    public static void main(String[] args) {
+        LocalDate date = LocalDate.now();
+        String dateToString = date.toString();
+        System.out.println(dateToString);
+    }
+}
+
+OUTPUT
+
+
+2024-09-08

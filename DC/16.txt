@@ -1,0 +1,11 @@
+class DC16{
+public static void main(String[] args){
+long longValue = 1234L;
+int intValue = (int) longValue;
+System.out.println(intValue);
+}}
+
+OUTPUT
+
+
+1234

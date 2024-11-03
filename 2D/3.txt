@@ -1,0 +1,46 @@
+class DArr3{
+public static void main(String[] args){
+int arr1[][]={{2,3,4,5,6},{2,3,4,5,6},{2,3,4,5,6}};
+int arr2[][]={{2,3,4,5,6},{2,3,4,5,6},{2,3,4,5,6}};
+int mul[][];
+mul=new int[arr1.length][arr1.length];
+System.out.println("Elements of First Matrix : ");
+for(int i = 0 ; i < arr1.length ; i++){
+for(int j = 0 ; j < arr1.length ; j++){
+System.out.print(arr1[i][j]+" ");
+}
+System.out.println();
+}
+System.out.println("\nElements of Second Matrix : ");
+for(int i = 0 ; i < arr2.length ; i++){
+for(int j = 0 ; j < arr2.length ; j++){
+System.out.print(arr2[i][j]+" ");
+}
+System.out.println();
+}
+for(int i = 0 ; i < mul.length ; i++){
+for(int j = 0 ; j < mul.length ; j++){
+mul[i][j]=arr1[i][j]*arr2[i][j];
+}
+}
+System.out.println("\nMultiplication of Matrix : ");
+for(int i = 0 ; i < mul.length ; i++){
+for(int j = 0 ; j < mul.length ; j++){
+System.out.print(mul[i][j]+" ");
+}
+System.out.println();
+}
+}}
+
+OUTPUT
+
+
+Elements of First Matrix :
+2 3 4
+2 3 4
+2 3 4
+
+Elements of Second Matrix :
+2 3 4
+2 3 4
+2 3 4

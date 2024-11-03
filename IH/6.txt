@@ -1,0 +1,26 @@
+class Animal{
+void move(){
+System.out.println("Stop");
+}
+}
+
+class Cheetah extends Animal{
+void move(){
+System.out.println("Run");
+}
+}
+
+class Main{
+public static void main(String[] args){
+Animal obj1=new Animal();
+obj1.move();
+Cheetah obj2=new Cheetah();
+obj2.move();
+}
+}
+
+OUTPUT
+
+
+Stop
+Run

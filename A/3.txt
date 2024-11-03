@@ -1,0 +1,30 @@
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class App3 extends Applet {
+public void init() {
+        
+   System.out.println("Init");   
+  }
+public void start() {
+        
+   System.out.println("Start");   
+  }
+public void paint(Graphics g) {
+        g.fillOval(50, 50, 100, 100);
+        System.out.println("Paint");  
+    }
+public void stop() {
+        
+   System.out.println("Stop");   
+  }
+public void destroy() {
+        
+   System.out.println("Destroy");   
+  }
+}
+/*
+
+
+*/

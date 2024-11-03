@@ -1,0 +1,61 @@
+In PHP we have the following conditional statements:
+
+1) if statement - executes some code if one condition is true
+2) if...else statement - executes some code if a condition is true and another code if that condition is false.
+3) if...elseif...else statement - executes different codes for more than two conditions
+4) switch statement - selects one of many blocks of code to be executed
+
+Example: The if statement executes some code if one condition is true. 
+
+Syntax :
+
+
+if(condition) {
+code to be executed if conditionis true
+}
+
+
+
+        <?php
+
+        /* if statement*/
+        $t = date("H");
+        
+        if ($t < "20") {
+          echo "Have a good day!";
+        }
+        ?>
+
+        ?> 
+    
+
+Output:
+
+        Have a good day!
+    
+The if...else statement executes some code if a condition is true and another code if that condition is false.
+
+
+PHP - The if...elseif...else Statement
+
+Output "Have a good morning!" if the current time is less than 10, and "Have a good day!" if the current time is less than 20. Otherwise it will output "Have a good night!":
+
+        <?php
+
+        /* if statement*/
+        $t = date("H");
+        
+        if ($t < "10") {
+          echo "Have a good morning!";
+        } elseif ($t < "20") {
+          echo "Have a good day!";
+        } else {
+          echo "Have a good night!";
+        }
+    ?>
+    
+
+Output:
+
+        Have a good day!
+

@@ -1,0 +1,11 @@
+class DC20{
+public static void main(String[] args){
+int intValue = 97;
+char charValue = (char) intValue;
+System.out.println(charValue);
+}}
+
+OUTPUT
+
+
+a

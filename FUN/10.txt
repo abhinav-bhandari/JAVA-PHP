@@ -1,0 +1,38 @@
+class Fun10 {
+
+    public static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void findTwinPrimes() {
+        for (int i = 2; i < 100; i++) {
+            if (isPrime(i) && isPrime(i + 2)) {
+                System.out.println("(" + i + ", " + (i + 2) + ")");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        findTwinPrimes();
+    }
+}
+
+OUTPUT
+
+
+(3, 5)
+(5, 7)
+(11, 13)
+(17, 19)
+(29, 31)
+(41, 43)
+(59, 61)
+(71, 73)

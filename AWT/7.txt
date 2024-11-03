@@ -1,0 +1,12 @@
+import java.awt.*;
+class awt7 extends Frame{
+public static void main(String[] args){
+Frame f=new Frame();
+f.setLayout(null);
+f.setBounds(100,100,200,200);
+Checkbox c1=new Checkbox("Female");
+f.add(c1);
+c1.setBounds(50,50,200,200);
+f.setVisible(true);
+}
+}

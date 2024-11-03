@@ -1,0 +1,25 @@
+class Fun3 {
+    public static void displayMiddleCharacter(String str) {
+        int length = str.length();
+        int middleIndex = length / 2;
+
+        if (length % 2 == 0) { // even length
+            char middleChar1 = str.charAt(middleIndex - 1);
+            char middleChar2 = str.charAt(middleIndex);
+            System.out.println("The middle characters are: " + middleChar1 + " and " + middleChar2);
+        } else { // odd length
+            char middleChar = str.charAt(middleIndex);
+            System.out.println("The middle character is: " + middleChar);
+        }
+    }
+
+    public static void main(String[] args) {
+        String str = "hello";
+        displayMiddleCharacter(str);
+    }
+}
+
+OUTPUT
+
+
+The middle character is: l

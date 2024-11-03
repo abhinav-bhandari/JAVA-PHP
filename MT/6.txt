@@ -1,0 +1,21 @@
+class Th6 extends Thread {
+    public void run() {
+        System.out.println("Thread : "+Thread.currentThread().getName());
+    }
+    public static void main(String[] args) {
+        Th6 t1 = new Th6();
+        Th6 t2 = new Th6();
+        Th6 t3 = new Th6();
+        t1.start();
+        t2.start();
+        t3.start();    
+}}
+
+OUTPUT
+
+
+G:\COLLEGE WORK\ProjectPrograms\MultiThreading>javac Th6.java
+G:\COLLEGE WORK\ProjectPrograms\MultiThreading>java Th6
+Thread : Thread-0
+Thread : Thread-1
+Thread : Thread-2

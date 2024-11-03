@@ -1,0 +1,21 @@
+class Fun5{
+public static double calculateFutureInvestmentValue(double principal, double rate, int years) {
+        if (principal <= 0 || rate <= 0 || years <= 0) {
+            return 0;
+        }
+        double futureValue = principal * Math.pow(1 + rate / 100, years);
+        return futureValue;
+    }
+
+    public static void main(String[] args) {
+        double principal = 1000; // initial investment
+        double rate = 5; // interest rate in percentage
+        int years = 5; // number of years
+        double futureValue = calculateFutureInvestmentValue(principal, rate, years);
+        System.out.println("Future investment value: " + futureValue);
+    }}
+
+OUTPUT
+
+
+Future investment value: 1276.2815625000003

@@ -1,0 +1,22 @@
+ADVANTAGES OF PHP:
+
+
+1) It is supported by all Operating Systems like Windows, Linux, Unix, etc.
+
+2) It is integrated with other programming languages (HTML, CSS, JavaScript, etc) and databased.
+
+3) It is easy to connect with the database to store and retrieve data from the database. Multiple databases can also be integrated with PHP.
+
+4) It is the fastest programming language compared to other programming languages.
+
+5) PHP frameworks and tools are used to protect web applications from outer attacks and security threats.
+
+
+DISADVANTAGES OF PHP:
+
+
+1) Since PHP is open-source so its code is visible to all programmers. If any bugs exist in the source code then its weakness can be explored by other programmers.
+
+2) It is not suitable for large applications because its maintenance is difficult.
+
+3) The error handling of a PHP framework is not good.

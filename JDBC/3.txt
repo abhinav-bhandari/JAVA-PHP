@@ -1,0 +1,38 @@
+import java.sql.*;
+class jdbc3{
+public static void main(String s[]) throws java.lang.ClassNotFoundException,SQLException{
+Class.forName("com.mysql.jdbc.Driver");
+Connection c1=DriverManager.getConnection("jdbc:mysql://localhost:3306/A","root","root");
+Statement st=c1.createStatement();
+System.out.println(st.executeUpdate("insert into student values(4,'D')"));
+}}
+
+
+OUTPUT
+
+
+G:\COLLEGE WORK\JavaPrograms>javac jdbc3.java
+G:\COLLEGE WORK\JavaPrograms>java jdbc3
+1
+
+
+mysql> select * from student;
++--------+--------+
+| rollno | name   |
++--------+--------+
+|      1 | A      |
+|      2 | B      |
+|      3 | C      |
++--------+--------+
+3 rows in set (0.03 sec)
+
+mysql> select * from student;
++--------+--------+
+| rollno | name   |
++--------+--------+
+|      1 | A      |
+|      2 | B      |
+|      3 | C      |
+|      4 | D      |
++--------+--------+
+4 rows in set (0.00 sec)

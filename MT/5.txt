@@ -1,0 +1,25 @@
+class Th5 implements Runnable{
+    public void run() {
+        System.out.println("Thread : "+Thread.currentThread().getName());
+    }
+    public static void main(String[] args) {
+        Th5 t1 = new Th5();
+        Thread th1=new Thread(t1);
+        th1.start();
+        Th5 t2 = new Th5();
+        Thread th2=new Thread(t2);
+        th2.start();
+        Th5 t3 = new Th5();
+        Thread th3=new Thread(t3);
+        th3.start();
+    }}
+
+OUTPUT
+
+
+G:\COLLEGE WORK\ProjectPrograms\MultiThreading>javac Th5.java
+
+G:\COLLEGE WORK\ProjectPrograms\MultiThreading>java Th5
+Thread : Thread-0
+Thread : Thread-1
+Thread : Thread-2

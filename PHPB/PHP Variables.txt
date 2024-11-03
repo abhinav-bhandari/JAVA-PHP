@@ -1,0 +1,25 @@
+A PHP variable may have a name as long or short as you wish. It can consist of one letter (x, y, z, and so on) or a whole bunch of them (tree, household, thelongestwordinthewholewideworld).
+
+The example below shows that the variable $text is a container to the value of Hey coders! and both $xand $y variables hold their respective values of 9 and 1.
+
+
+EXAMPLE: Simple program to print “Hello world!” message on the screen.
+
+        <?php  
+           creating a variables
+            $text = "Hey coders!";  
+            $x = 9;
+            $y = 1;  
+        ?>
+
+EXAMPLE: Simple program to create a "STRING" variable with message.
+
+        <?php
+        creating a variables
+            $website = "bitdegree.org";  
+            echo "I want to visit $website!";
+            ?>
+    
+OUTPUT:
+
+        I want to visit bitdegree.org

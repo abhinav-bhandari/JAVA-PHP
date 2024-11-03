@@ -1,0 +1,18 @@
+In PHP, the continue statement is used within loops (such as for, foreach, while, and do...while loops) to skip the current iteration and move to the next one. The continue statement allows you to control the flow of a loop by skipping specific iterations when a certain condition is met. Here's how the continue statement is typically used:
+
+Using continue in a while loop:
+
+
+        $counter = 1;
+        while ($counter <= 10) {
+            $counter++;
+                if ($counter % 3 == 0) {
+            continue; // Skip numbers divisible by 3
+            }
+            echo $counter . " ";
+        }
+    
+Output:
+
+        2 4 5 7 8 10
+    

@@ -1,0 +1,34 @@
+It is one of the widely used open-source general-purpose scripting language that is used for backend Development. Apart from this, let’s see why we should learn it.
+
+
+1) Functions reduces the repetition of code within a program: Function allows you to extract commonly used block of code into a single component. Now you can perform the same task by calling this function wherever you want within your script without having to copy and paste the same block of code again and again.
+
+2) Functions makes the code much easier to maintain:Since a function created once can be used many times, so any changes made inside a function automatically implemented at all the places without touching the several files.
+
+3) Functions makes it easier to eliminate the errors:When the program is subdivided into functions, if any error occur you know exactly what function causing the error and where to find it. Therefore, fixing errors becomes much easier.
+
+4) Functions can be reused in other application : Because a function is separated from the rest of the script, it's easy to reuse the same function in other applications just by including the php file containing those functions.
+
+function functionName(){
+                // Code to be executed
+            }
+        
+    
+The declaration of a user-defined function start with the word function, followed by the name of the function you want to create followed by parentheses i.e. () and finally place your function's code between curly brackets {}.
+
+This is a simple example of an user-defined function, that display today's date:
+
+    
+        <?php
+      // Defining function
+        function whatIsToday(){
+        echo "Today is " . date('l', mktime());
+        }
+        // Calling function
+        whatIsToday();
+        ?>
+    
+  
+Output :
+
+    Today is Thursday

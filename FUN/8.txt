@@ -1,0 +1,17 @@
+class Fun8{
+    public static void displayCurrentDateTime() {
+        long currentTime = System.currentTimeMillis();
+        // Convert milliseconds to date and time
+        String formattedDateTime = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date(currentTime));
+        System.out.println("Current date and time: " + formattedDateTime);
+    }
+
+    public static void main(String[] args) {
+        displayCurrentDateTime();
+    }
+}
+
+OUTPUT
+
+
+Current date and time: 2024-09-08 17:38:24

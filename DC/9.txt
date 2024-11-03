@@ -1,0 +1,16 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+class DC9{
+    public static void main(String[] args) {
+        String dateString = "2022-07-25";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate dateFromString = LocalDate.parse(dateString, formatter);
+        System.out.println(dateFromString);
+    }
+}
+
+OUTPUT
+
+
+2022-07-25

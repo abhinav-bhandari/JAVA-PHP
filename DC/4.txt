@@ -1,0 +1,11 @@
+class DC4{
+public static void main(String[] args) {
+long num = 1234567890L;
+String str = Long.toString(num);
+System.out.println(str);
+}}
+
+OUTPUT
+
+
+1234567890

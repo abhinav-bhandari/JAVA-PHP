@@ -1,0 +1,50 @@
+class DArr5{ 
+static final int N = 4; 
+static int areSame(int A[][], int B[][]){ 
+int i, j; 
+for (i = 0 ; i < N ; i++) 
+for (j = 0 ; j < N ; j++) 
+if (A[i][j] ! = B[i][j]) 
+return 0; 
+return 1; 
+} 
+public static void main (String[] args){ 
+int A[][] = { {1, 1, 1, 1},{2, 2, 2, 2},{3, 3, 3, 3},{4, 4, 4, 4}}; 
+int B[][] = { {1, 1, 1, 1},{2, 2, 2, 2},{3, 3, 3, 3},{4, 4, 4, 4}}; 
+System.out.println("Elements of First Matrix : ");
+for(int i = 0 ; i < N ; i++){
+for(int j = 0 ; j < N ; j++){
+System.out.print(A[i][j]+" ");
+}
+System.out.println();
+}
+System.out.println("\nElements of Second Matrix : ");
+for(int i = 0 ; i < N ; i++){
+for(int j = 0 ; j < N ; j++){
+System.out.print(B[i][j]+" ");
+}
+System.out.println();
+}
+if (areSame(A, B) == 1) 
+System.out.println("\nMatrices are identical"); 
+else
+System.out.println("\nMatrices are not identical"); 
+} 
+} 
+
+OUTPUT
+
+
+Elements of First Matrix :
+1 1 1 1
+2 2 2 2
+3 3 3 3
+4 4 4 4
+
+Elements of Second Matrix :
+1 1 1 1
+2 2 2 2
+3 3 3 3
+4 4 4 4
+
+Matrices are identical

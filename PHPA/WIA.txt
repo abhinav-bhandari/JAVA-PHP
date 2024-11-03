@@ -1,0 +1,13 @@
+Arrays are complex variables that allow us to store more than one value or a group of values under a single variable name. Let's suppose you want to store colors in your PHP script. Storing the colors one by one in a variable could look something like this:
+
+        
+        <?php
+            $color1 = "Red";
+            $color2 = "Green";
+            $color3 = "Blue";
+        ?>
+        
+    
+        Red
+        Green
+        Blue

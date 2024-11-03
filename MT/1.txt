@@ -1,0 +1,15 @@
+class Th1 extends Thread {
+    public void run() {
+        System.out.println("Hello, World!");
+    }
+    public static void main(String[] args) {
+        Th1 thread = new Th1();
+        thread.start();
+    }}
+
+OUTPUT
+
+
+G:\COLLEGE WORK\ProjectPrograms\MultiThreading>javac Th1.java
+G:\COLLEGE WORK\ProjectPrograms\MultiThreading>java Th1
+Hello, World!
